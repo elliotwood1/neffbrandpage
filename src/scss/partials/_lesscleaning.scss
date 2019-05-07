@@ -1,0 +1,117 @@
+.lesscleaning-box {
+	background-color: #47423e;
+
+	@media (min-width: $tablet) {
+		display: flex;
+	}
+
+	.image-container {
+		height: 300px;
+		background-image: url('../../img/person-cutting-veg.jpg');
+		background-position: 50%;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		@media (min-width: $tablet) {
+			width: 50%;
+			height: auto;
+		}
+	}
+
+	.outer {
+		@media (min-width: $tablet) {
+			display: flex;
+			align-items: center;
+			width: 50%;
+			padding: aoSpace(5);
+		}
+
+		@media (min-width: $uber) {
+			padding: aoSpace(20) aoSpace(10);
+		}
+	}
+
+	.inner {
+		@media (min-width: $tablet) {
+			max-width: 600px;
+		}
+
+		p {
+			@extend %p1;
+
+			@media (min-width: $tablet) {
+				max-width: 380px;
+			}
+		}
+
+		h2 {
+			@extend %header-content-title;
+
+			padding-top: aoSpace(3);
+			padding-bottom: aoSpace(2);
+			font-weight: 300;
+			font-size: aoSpace(3);
+			color: #b6b3af;
+
+			@media (min-width: $tablet) {
+				max-width: 200px;
+				font-size: aoSpace(4);
+			}
+		}
+	}
+
+	.inner-description {
+		@extend %p1;
+
+		padding-bottom: aoSpace(3);
+		color: #cac4bb;
+	}
+
+	.ao-cta {
+		padding: aoSpace(1);
+		padding-right: 40px;
+		border: 1px solid #cac4bb;
+		background: 0 0;
+		color: #cac4bb;
+
+		&::after {
+			content: '\e918';
+			font-family: ao-icons;
+		}
+	}
+
+	.video-box {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		color: #cac4bb;
+
+		.video-cta {
+			margin-top: aoSpace(2);
+			margin-bottom: aoSpace(3);
+
+			&::after {
+				content: '\e643';
+				width: 40px;
+				height: 40px;
+				margin: 0 aoSpace(1);
+				padding: 10px;
+				border: 2px solid white;
+				line-height: 2;
+				font-family: ao-icons;
+				font-size: 1.25rem;
+				text-align: center;
+				background-color: hsla(0, 0%, 100%, 0.2);
+				color: white;
+				border-radius: 50%;
+				text-indent: 4px;
+			}
+		}
+
+		p {
+			@extend %p1;
+
+			padding-left: 10px;
+		}
+	}
+}

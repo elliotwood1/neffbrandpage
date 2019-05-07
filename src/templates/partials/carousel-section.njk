@@ -1,0 +1,23 @@
+<section class="{{section.sectionId}}" id="{{section.sectionId}}">
+    <div  class="carousel-outer">
+    {% for slide in data.slides %}
+        <div class="slide slide-{{ loop.index }}">
+            <div class="image-container" style="background-image: url({{slide.image}})"></div>
+            <div class="outer">
+                <div class="inner">
+                    <span class="slide-number">0{{ loop.index }}</span>
+                    <h2>{{ slide.title }}</h2>
+                    <p class="inner-description">{{ slide.description }}</p>
+                    <a class="ao-cta">{{ slide.button }}</a>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+    <div class="pagination-container">
+        <span id="slide1" class="pagination-container__slide-number current" data-slide-number="1">01</span>
+        <span id="slide2" class="pagination-container__slide-number" data-slide-number="2">02</span>
+        <span id="slide3" class="pagination-container__slide-number" data-slide-number="3">03</span>
+        <span id="slide4" class="pagination-container__slide-number" data-slide-number="4">04</span>
+    </div>
+</section>

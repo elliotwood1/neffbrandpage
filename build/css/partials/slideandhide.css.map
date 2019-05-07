@@ -1,0 +1,1 @@
+{"version":3,"sources":["partials/slideandhide.scss"],"names":[],"mappings":"AAAA;EAEE,YAAW;EACX,4BAA2B;EAC3B,8BAA6B,EAC7B","file":"slideandhide.css","sourcesContent":[".slideandhide-box {\n\timg {\n\t\twidth: 100%;\n\t\tbackground-position-x: left;\n\t\tbackground-position-y: center;\n\t}\n}\n"]}

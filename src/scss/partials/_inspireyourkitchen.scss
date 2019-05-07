@@ -1,0 +1,23 @@
+.inspireYourKitchen {
+	padding: aoSpace(7) 0;
+	text-align: center;
+	background-color: #f1eee9;
+	color: #77685a;
+
+	@media (min-width: $tablet) {
+		padding: aoSpace(8);
+	}
+
+	h2 {
+		@extend %header-sub;
+
+		padding-bottom: aoSpace(2);
+		font-weight: 300;
+	}
+
+	p {
+		@extend %p1;
+
+		color: #77685a;
+	}
+}

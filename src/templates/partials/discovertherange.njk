@@ -1,0 +1,38 @@
+<section class="{{ section.sectionId}}" id="{{ section.sectionId }}">
+    <div class="inner">
+        <h2>{{ data.title }}</h2>
+        <a class="ao-cta ghost-dark">{{ data.button }}</a>
+    </div>
+    <div class="products">
+        {% for product in data.products %}
+        <div class="product-container">
+            <div class="background-image" style="background-image: url({{ product.background }})">
+                <div class="wrapper">
+                    <h3 class="product-title">{{ product.title }}</h3>
+                    <p class="product-sku">{{ product.sku }}</p>
+                    <ul class="description-list">
+                        {% for description in product.descriptions %}
+                            <li class="description-item">{{ description.text }}</li>
+                        {% endfor %}
+                    </ul>
+                    <picture class="product-image">
+                        <image src="{{ product.image }}">
+                    </picture>
+                    <div class="price-wrapper">
+                        <div class="price-information">
+                            <span class="price">{{ product.price }}</span>
+                            <span class="price-discounts">
+                                <span class="savings">{{ product.was }}</span>
+                                <span class="percentage">{{ product.save }}</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="button-wrapper">
+                        <a class="ao-cta ghost-light">{{ product.button }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>

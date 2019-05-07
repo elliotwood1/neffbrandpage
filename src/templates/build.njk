@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="{{ config.lang }}">
+	<meta charset="utf-8">
+
+	<title>{{ config.title }}</title>
+
+	<meta name="viewport" content="width=device-width, user-scalable=1, maximum-scale=1">
+	<meta name="description" content="{{ config.description }}">
+
+	<script type="text/javascript" src="//media.ao.com/cdnbundle/aost/latest/bundled/AOL/js/Master_Head.js"></script>
+	<link href="//media.ao.com/cdnbundle/aost/latest/bundled/AOL/css/MasterStructure.css" rel="stylesheet" type="text/css">
+	<link href="//media.ao.com/cdnbundle/aost/latest/bundled/AOL/css/Sitecore.css" rel="stylesheet" type="text/css" />
+
+	<style>
+		.false-header {
+			display: block;
+			width: 100%;
+			height: 104px;
+			background-color: #7fba23;
+		}
+
+		.false-header--de-DE {
+			height: 104px;
+		}
+
+		.false-header--nl-NL {
+			height: 103px;
+		}
+
+		@media (min-width: 768px) {
+			.false-header {
+				height: 152px;
+			}
+
+			.false-header--de-DE {
+				height: 162px;
+			}
+
+			.false-header--nl-NL {
+				height: 162px;
+			}
+		}
+
+		@media (min-width: 990px) {
+			.false-header {
+				height: 162px;
+			}
+
+			.false-header--de-DE {
+				height: 179px;
+			}
+
+			.false-header--nl-NL {
+				height: 179px;
+			}
+		}
+	</style>
+
+</head>
+
+<body>
+	<section class="false-header false-header--{{ config.lang }}"></section>
+	<script src="//media.ao.com/cdnbundle/aost/latest/bundled/AOL/js/JQuery17.js"></script>
+	<script src="//media.ao.com/cdnbundle/aost/latest/bundled/AOL/js/BlankTemplate.js"></script>
+	{% include 'dist.njk' %}
+</body>

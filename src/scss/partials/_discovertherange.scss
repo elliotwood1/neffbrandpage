@@ -1,0 +1,160 @@
+.discoverTheRange {
+	.inner {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: aoSpace(7) aoSpace(2);
+		text-align: center;
+
+		h2 {
+			@extend %header-sub;
+
+			padding-bottom: aoSpace(3);
+			font-weight: 300;
+		}
+	}
+
+	.products {
+		@media (min-width: $tablet) {
+			display: flex;
+			margin-right: aoSpace(1);
+			margin-bottom: aoSpace(1);
+			margin-left: aoSpace(1);
+		}
+
+		@media (min-width: $desktop) {
+			margin-right: aoSpace(5);
+			margin-bottom: aoSpace(5);
+			margin-left: aoSpace(5);
+		}
+	}
+
+	.wrapper {
+		padding: aoSpace(5) aoSpace(6);
+
+		@media (min-width: $tablet) {
+			padding: aoSpace(3);
+		}
+
+		@media (min-width: 1700px) {
+			padding: aoSpace(4);
+		}
+	}
+
+	.product-container {
+		@media (min-width: $tablet) {
+			width: 33.33%;
+		}
+
+		.background-image {
+			position: relative;
+
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				z-index: 1;
+				background-color: rgba(0, 0, 0, 0.3);
+			}
+		}
+
+		.wrapper {
+			position: relative;
+			z-index: 2;
+		}
+
+		.product-title {
+			@extend %header-sub;
+
+			padding-bottom: aoSpace(1);
+			color: #ffffff;
+		}
+
+		.product-sku {
+			color: #ffffff;
+		}
+
+		.description-list {
+			margin-left: aoSpace(1.5);
+			padding-top: aoSpace(2);
+			color: #cccccc;
+
+			@media (min-width: $tablet) {
+				min-height: 241px;
+			}
+
+			@media (min-width: $desktop) {
+				min-height: 208px;
+			}
+
+			@media (min-width: 1700px) {
+				min-height: 120px;
+			}
+		}
+
+		.description-item {
+			@extend %p1;
+
+			padding-bottom: aoSpace(0.5);
+			list-style-type: disc;
+			list-style-position: outside;
+		}
+	}
+
+	.product-image {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-top: aoSpace(4);
+
+		img {
+			width: 200px;
+		}
+	}
+
+	.price-information {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: aoSpace(2.5) aoSpace(0) aoSpace(2.5) aoSpace(0);
+
+		.price {
+			color: #ffffff;
+		}
+
+		.price-discounts {
+			margin-top: 2px;
+			margin-left: 4px;
+		}
+
+		.savings {
+			@extend %p4;
+
+			line-height: 1.2;
+			color: #ffffff;
+		}
+
+		.percentage {
+			@extend %p4;
+
+			line-height: 1.2;
+			font-weight: 700;
+			color: #bb0708;
+		}
+	}
+
+	.price-discounts {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.button-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}

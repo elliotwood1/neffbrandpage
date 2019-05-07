@@ -1,0 +1,63 @@
+.brand-page {
+	// max-width: $maxWidth;
+	margin: 0 auto;
+
+	* {
+		box-sizing: border-box;
+		text-size-adjust: 100%;
+	}
+
+	.inner {
+		@include aoContainer;
+	}
+}
+
+.lazy-brand-image-container {
+	position: relative;
+	overflow: hidden;
+
+	.lazy-brand-image {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2;
+		width: 100%;
+		height: 100%;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+		transition: opacity 500ms ease;
+		opacity: 0;
+	}
+
+	&.lazy-brand-image-loaded {
+		img {
+			opacity: 1;
+		}
+	}
+}
+
+.lazy-brand-image-bg {
+	position: relative;
+	height: 100%;
+
+	.lazy-brand-image-bg-placeholder {
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		transition: opacity 500ms ease;
+		opacity: 1;
+	}
+
+	&.lazy-brand-image-loaded {
+		.lazy-brand-image-bg-placeholder {
+			opacity: 0;
+		}
+	}
+}

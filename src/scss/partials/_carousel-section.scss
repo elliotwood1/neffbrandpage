@@ -1,0 +1,162 @@
+.carousel-section {
+	position: relative;
+	overflow: hidden;
+
+	.carousel-outer {
+		@media (min-width: $tablet) {
+			display: flex;
+			width: 400vw;
+			transition: transform 0.75s linear;
+		}
+
+		@media (min-width: $desktop) {
+			height: 700px;
+		}
+	}
+
+	.pagination-container {
+		display: none;
+
+		@media (min-width: $tablet) {
+			display: block;
+			position: absolute;
+			bottom: aoSpace(4);
+			left: aoSpace(6);
+		}
+
+		@media (min-width: $desktop) {
+			bottom: aoSpace(5);
+			left: aoSpace(9);
+		}
+
+		.current {
+			font-size: 1rem;
+			color: #3d352e;
+		}
+	}
+
+	.pagination-container__slide-number {
+		@extend %header-module;
+
+		margin-left: aoSpace(2.5);
+		padding-bottom: aoSpace(1);
+		border-bottom: solid 3px #77685a;
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: 300;
+		font-size: 0.875rem;
+		color: #a99b8e;
+		cursor: pointer;
+
+		&:first-of-type {
+			margin-left: 0;
+		}
+	}
+
+	.slide {
+		background-color: #f1eee9;
+
+		@media (min-width: $tablet) {
+			display: flex;
+			width: 100vw;
+		}
+	}
+
+	.slide-number {
+		@extend %header-module;
+
+		padding-bottom: aoSpace(1);
+		border-bottom: solid 3px #77685a;
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: 300;
+		font-size: 20px;
+		color: #77685a;
+	}
+
+	.image-container {
+		height: 300px;
+		background-position: 50%;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		@media (min-width: $tablet) {
+			order: 2;
+			width: 50%;
+			height: auto;
+		}
+	}
+
+	.outer {
+		@media (min-width: $tablet) {
+			display: flex;
+			align-items: center;
+			width: 50%;
+			padding: aoSpace(5);
+		}
+
+		@media (min-width: $desktop) {
+			padding-top: 80px;
+			padding-bottom: 80px;
+		}
+
+		.inner {
+			padding-top: aoSpace(4);
+			padding-bottom: aoSpace(4);
+
+			@media (min-width: $tablet) {
+				max-width: 100%;
+			}
+
+			@media (min-width: $desktop) {
+				padding-left: aoSpace(4);
+			}
+
+			p {
+				@extend %p1;
+
+				color: #77685a;
+
+				@media (min-width: $desktop) {
+					width: 65%;
+				}
+			}
+
+			h2 {
+				@extend %header-content-title;
+
+				padding-top: aoSpace(2);
+				padding-bottom: aoSpace(2);
+				font-weight: 300;
+				font-size: 28px;
+				color: #47423e;
+
+				@media (min-width: $tablet) {
+					font-size: aoSpace(4);
+				}
+
+				@media (min-width: $desktop) {
+					width: 50%;
+				}
+			}
+		}
+	}
+
+	.inner-description {
+		@extend %p1;
+
+		padding-bottom: aoSpace(3);
+		color: #574f3d;
+	}
+
+	.ao-cta {
+		padding: aoSpace(1);
+		padding-right: 40px;
+		border: 1px solid #574f3d;
+		background: 0 0;
+		color: #574f3d;
+
+		&::after {
+			content: '\e918';
+			font-family: ao-icons;
+		}
+	}
+}

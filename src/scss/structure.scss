@@ -1,0 +1,27 @@
+/* Globals */
+
+@import '@ao-internal/marketing-globals/sass/variables';
+@import '@ao-internal/marketing-globals/sass/mixins';
+@import '@ao-internal/marketing-globals/sass/placeholders';
+
+/* Local Includes */
+
+@import 'inc/variables';
+@import 'inc/mixins';
+@import 'inc/placeholders';
+
+/* Global Styles */
+
+@import '@ao-internal/marketing-globals/modules/AoStickyNav/styles';
+@import '@ao-internal/marketing-globals/modules/AoPropositionFooter/styles';
+
+/* Page Styles */
+
+@import 'partials/layout';
+@import 'partials/header';
+@import 'partials/inspireyourkitchen';
+@import 'partials/slideandhide';
+@import 'partials/neffrating';
+@import 'partials/lesscleaning';
+@import 'partials/carousel-section';
+@import 'partials/discovertherange';

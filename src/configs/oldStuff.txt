@@ -1,0 +1,44 @@
+{
+			"sectionId": "beautifullyBuilt",
+			"templateId": "beautifullyBuilt",
+			"data": {
+				"title": "Beautifully built-in, seamlessly stylish",
+				"description": "Discover a collection of stunning built-in appliances from NEFF. Made to fit seamlessly into your kitchen, these washing machines, dishwashers and fridge freezers will look great, with plenty of tech to make kitchen life that little bit more laid back.",
+				"button": "Shop all built-in",
+				"isFirst": true,
+				"slideNumber": "01"
+			}
+		},
+		{
+			"sectionId": "cleanerMore",
+			"templateId": "cleanerMore",
+			"data": {
+				"title": "Cleaner, more hygienic dishes",
+				"description": "The thought of washing up is enough to put anyone off their dessert. Luckily, with a NEFF built-in dishwasher you can get cleaned up without lifting a finger. Thanks to the intensive Chef 70 programme, you won’t miss scrubbing off those stubborn stains and baked on bits of food. It works by combining high pressure water jets and 70°C temperatures, keeping your dishes hygienic and super spotless.",
+				"button": "Shop dishwashers",
+				"isFirst": false,
+				"slideNumber": "02"
+			}
+		},
+		{
+			"sectionId": "fresherTastier",
+			"templateId": "fresherTastier",
+			"data": {
+				"title": "Fresher, tastier food",
+				"description": "Your culinary creations deserve so much more than wilting salad and stale veggies. Thanks to FreshSafe technology in NEFF’s range of fridges and freezers, your fresh produce will be in fine form and extra tasty for up to twice as long. It works by storing all your fruit, veg, meat and cheese at slightly lower temperatures - so when you’re cooking up a storm, your ingredients will always be at their best.",
+				"button": "Shop fridges and freezers",
+				"isFirst": false,
+				"slideNumber": "03"
+			}
+		},
+		{
+			"sectionId": "extraordinarilyQuiet",
+			"templateId": "extraordinarilyQuiet",
+			"data": {
+				"title": "Extraordinarily quiet, super-efficient",
+				"description": "You’ll always know where your laundry’s at with a NEFF washing machine. Thanks to clever Timelight technology, the remaining wash time is projected onto your floor - so you can forget the guesswork and get on with planning your day. And because these machines feature a whisper-quiet EcoSilence Drive motor, you can pop a load on, sit back and put your feet up.",
+				"button": "Shop NEFF laundry",
+				"isFirst": false,
+				"slideNumber": "04"
+			}
+		},
