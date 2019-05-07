@@ -982,8 +982,7 @@ header {
 .inspireYourKitchen {
   padding: 56px 0;
   text-align: center;
-  background-color: #f1eee9;
-  color: #77685a; }
+  background-color: #f1eee9; }
   @media (min-width: 768px) {
     .inspireYourKitchen {
       padding: 64px; } }
@@ -1390,7 +1389,7 @@ header {
           font-size: 32px; } }
       @media (min-width: 990px) {
         .carousel-section .outer .inner h2 {
-          width: 50%; } }
+          width: 65%; } }
   .carousel-section .inner-description {
     padding-bottom: 24px;
     color: #574f3d; }
@@ -1567,5 +1566,11 @@ header {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
+
+.navInner {
+  background-color: #363536; }
+
+.open {
+  background-color: #363536; }
 
 /*# sourceMappingURL=structure.css.map */
