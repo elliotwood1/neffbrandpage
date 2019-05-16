@@ -49,6 +49,7 @@
 
 		.background-image {
 			position: relative;
+			background-position: 50%;
 
 			&::before {
 				content: '';
@@ -58,7 +59,7 @@
 				bottom: 0;
 				left: 0;
 				z-index: 1;
-				background-color: rgba(0, 0, 0, 0.3);
+				background-color: rgba(0, 0, 0, 0.4);
 			}
 		}
 

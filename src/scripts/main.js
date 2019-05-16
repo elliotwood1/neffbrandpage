@@ -18,6 +18,7 @@ const slideSelect = slide => {
 			slide.classList.add('current');
 		} else {
 			slideArray[i].classList.remove('current');
+			carouselOuter.style.display = 'hidden';
 		}
 	}
 };

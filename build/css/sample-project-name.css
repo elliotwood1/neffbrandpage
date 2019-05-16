@@ -998,7 +998,7 @@ header {
     .slideandhide-box {
       height: 70vh;
       background-image: url("../../img/slide-and-hide-desktop.jpg");
-      background-position: 0%;
+      background-position: 35%;
       background-repeat: no-repeat;
       background-size: cover; } }
   .slideandhide-box .image-container {
@@ -1037,7 +1037,7 @@ header {
   @media (min-width: 990px) {
     .slideandhide-box .inner {
       padding-right: 8px;
-      padding-left: 112px; } }
+      padding-left: 96px; } }
   @media (min-width: 1850px) {
     .slideandhide-box .inner {
       padding-right: 8px;
@@ -1457,7 +1457,8 @@ header {
     width: 33.33%; } }
 
 .discoverTheRange .product-container .background-image {
-  position: relative; }
+  position: relative;
+  background-position: 50%; }
   .discoverTheRange .product-container .background-image::before {
     content: '';
     position: absolute;
@@ -1466,7 +1467,7 @@ header {
     bottom: 0;
     left: 0;
     z-index: 1;
-    background-color: rgba(0, 0, 0, 0.3); }
+    background-color: rgba(0, 0, 0, 0.4); }
 
 .discoverTheRange .product-container .wrapper {
   position: relative;
@@ -1567,10 +1568,10 @@ header {
       -ms-flex-align: center;
           align-items: center; }
 
-.navInner {
+#AoStickyNav .aosnContainer {
   background-color: #363536; }
 
-.open {
+#AoStickyNav .aosnContainer ul .open {
   background-color: #363536; }
 
 /*# sourceMappingURL=structure.css.map */

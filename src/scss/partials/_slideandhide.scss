@@ -4,8 +4,7 @@
 	@media (min-width: $tablet) {
 		height: 70vh;
 		background-image: url('../../img/slide-and-hide-desktop.jpg');
-		// background-position: 35%;
-		background-position: 0%;
+		background-position: 35%;
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
@@ -44,7 +43,7 @@
 
 		@media (min-width: $desktop) {
 			padding-right: aoSpace(1);
-			padding-left: aoSpace(14);
+			padding-left: aoSpace(12);
 		}
 
 		@media (min-width: 1850px) {
